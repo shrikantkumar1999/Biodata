@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        table{border-collapse:collapse ;}
+       td{  
+        margin: 0;font: italic small-caps bold 12px/25px Georgia, serif;padding: -2px;font-size:xx-small;
+        height: 12px;
+       }
+       
+    </style>
+    <script>
+function print1(){
+
+    var getFullContent = document.body.innerHTML;
+    var printsection = document.getElementById("trr")
+    printsection.style.color="red";
+    printsection= printsection.innerHTML;
+    document.body.innerHTML = printsection;
+    // printsection.style.margin="-20px";
+    window.print();
+    document.body.innerHTML = getFullContent;
+ 
+
+
+   
+}
+
+
+    </script>
+</head>
+<body style="background-repeat: no-repeat; color: red;" >
+<div style="text-align: center;position: sticky; top:20px ; margin-bottom: -30px;z-index: 1; ">
+    <button style="cursor: pointer; border: none; background: none; " onclick="print1()" >Bio data</button></div>
+<div id="trr"style="margin-top:30px ; overflow-y :auto" > 
+<img src="./ganesh2.jpg" download style=" height: 100%;width: 100%; z-index: -1;opacity: 0.4 ;position: fixed;  " >
+    
+<div style=" margin-left: 20%; ">
+    <table style=" margin-left: 16%;width: 60%; ">
+        <div > <h3 style="margin-bottom: 0;margin-top: 0; margin-left: 15%;"> Personal Details</h3>  </div>
+         
+<tr><td>Name </td>   <td>:</td>    <td>SHRIKANT KUMAR </td>   </tr>
+<tr><td>Date of Birth </td>   <td>:</td>   <td> 16/12/1999 (23y)  </td>   <td colspan="4" rowspan="4"><img src="./me.jpg" style="height: 100px;width: 90px;"></td>    </tr>
+<tr><td>Height </td>          <td>:</td>    <td>5Feet 3inches  </td>      </tr>
+<tr><td>Weigth </td>          <td>:</td>     <td>55kg  </td>      </tr>
+<tr><td>Blood Group </td>     <td>:</td>          <td> B+ </td>      </tr>
+<tr><td>Complexion </td>      <td>:</td>     <td>Medium  </td>      </tr>
+<tr><td>Education </td>       <td>:</td>    <td>B.tech,ECE  </td>      </tr>
+<tr><td>Occupation </td>      <td>:</td>     <td>XYZ COMPANY  </td>      </tr>
+    </table>
+    <table style=" margin-left: 16%;width: 60%; ">
+ <div id="ty" style="margin-top:0px; "> <h3 style="margin-top: 5px;margin-left: 15%;margin-bottom: 0;"> Family Details</h3>  </div>
+ <!-- <div style="border: 1px solid red;position: sticky;top:100px;    "><img src="./me.jpg" style="height: 100px;width: 90px;"></div> -->
+       
+<tr><td>Grandfather </td>            <td>:</td>  <td>Ramchandra Shah(BSNL EXC)  </td>     </tr>
+<tr><td>Father Name</td>   <td>:</td>     <td> Nityanand prasad(Businessman)  </td>      </tr>
+<tr><td>Mother Name </td>          <td>:</td>   <td>Sima devi(teacher) </td>      </tr>
+<tr> <td  >Siblings </td>  <td  >:</td> <td  > Krishna Kant Kumar(Elder) </td>      </tr>
+<tr> <td></td><td></td>  <td>,Shridhar Kumar(Younger) </td> </tr>
+<tr><td>Religion </td> <td>:</td>      <td>  Hindu</td> <td rowspan="4"> 
+    <img src="./qr-code.png" style="  height: 90px;width: 90px; "></td>     </tr>
+<tr><td>Cast </td>  <td>:</td>  <td>Kanu  </td>      </tr>
+<tr><td>Residence </td>   <td>:</td>    <td >Turkaulia Main Chowk,  </td>      </tr>
+<tr> <td></td><td></td>  <td>,East Champaran,845437,bihar </td> </tr>
+<tr><td>Contact No </td>   <td>:</td>   <td>6206417329  </td>      </tr>
+    </table>
+    
+</div>
+<div style="text-align: center; "> 
+    <a  style="text-decoration:none" href="https://shrikantkumar1999.github.io/portfolio">My website</a>
+
+    </div> 
+      </div>
+    
+       
+</body>
+</html>
