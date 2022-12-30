@@ -18,7 +18,9 @@ function print1(){
 
     var getFullContent = document.body.innerHTML;
     var printsection = document.getElementById("trr")
-    printsection.style.color="red";
+    var ret= document.getElementById('button1');
+   
+   ret.style.display="none"; 
     printsection= printsection.innerHTML;
     document.body.innerHTML = printsection;
     // printsection.style.margin="-20px";
@@ -34,7 +36,7 @@ function print1(){
     </script>
 </head>
 <body style="background-repeat: no-repeat; color: red;" >
-<div style="text-align: center;position: sticky; top:20px ; margin-bottom: -30px;z-index: 1; ">
+<div id="button1" style="text-align: center;position: sticky; top:20px ; margin-bottom: -30px;z-index: 1; ">
     <button style="cursor: pointer; border: none; background: none; " onclick="print1()" >Bio data</button></div>
 <div id="trr"style="margin-top:30px ; overflow-y :auto" > 
 <img src="./ganesh2.jpg" download style=" height: 100%;width: 100%; z-index: -1;opacity: 0.4 ;position: fixed;  " >
